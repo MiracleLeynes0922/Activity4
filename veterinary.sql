@@ -9,6 +9,18 @@ CREATE TABLE owners(
     email VARCHAR(100)
 );
 
+ INSERT INTO owners (ownerid, ofirstname, olastname, address, phone, email) VALUES
+    (1, 'Maria', 'Santos', '123 Mabini St, Manila', '09171234567', 'maria.santos@example.com'),
+    (2, 'John', 'Reyes', '45 Bonifacio Ave, Quezon City', '09283456712', 'john.reyes@example.com'),
+    (3, 'Carlos', 'Dizon', '78 Luna St, Pasig', '09351239876', 'carlos.dizon@example.com'),
+    (4, 'Anna', 'Lopez', '10 Rivera Rd, Makati', '09562347812', 'anna.lopez@example.com'),
+    (5, 'Mark', 'Villanueva', '56 Roxas Blvd, Manila', '09184562378', 'mark.villanueva@example.com'),
+    (6, 'Sophie', 'Cruz', '89 Ortigas Center, Pasig', '09278934561', 'sophie.cruz@example.com'),
+    (7, 'Daniel', 'Torres', '34 Aurora Blvd, San Juan', '09451234987', 'daniel.torres@example.com'),
+    (8, 'Laura', 'Garcia', '67 Katipunan Ave, QC', '09173459821', 'laura.garcia@example.com'),
+    (9, 'Patrick', 'Mendoza', '90 Dapitan St, Manila', '09384561237', 'patrick.mendoza@example.com'),
+    (10, 'Eleanor', 'Castro', '22 Quirino Hwy, Caloocan', '09573412895', 'eleanor.castro@example.com');
+    
 CREATE TABLE animals (
     animalid INT PRIMARY KEY,
     name VARCHAR(50),
