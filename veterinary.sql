@@ -54,6 +54,18 @@ CREATE TABLE appointments (
     FOREIGN KEY (animalid) REFERENCES animals(animalid)
 );
 
+INSERT INTO appointments (appointid, animalid, appointdate, reason) VALUES
+(1, 1, '2025-01-05', 'Vaccination'),
+(2, 2, '2025-01-08', 'Dental cleaning'),
+(3, 3, '2025-01-10', 'Skin allergy check-up'),
+(4, 4, '2025-01-12', 'Annual wellness exam'),
+(5, 5, '2025-01-14', 'Limping - leg examination'),
+(6, 6, '2025-01-17', 'Follow-up vaccine booster'),
+(7, 7, '2025-01-20', 'Ear infection evaluation'),
+(8, 8, '2025-01-22', 'Routine check-up'),
+(9, 9, '2025-01-25', 'Surgery follow-up'),
+(10, 10, '2025-01-28', 'Behavioral consultation');
+
 CREATE TABLE doctors (
     doctorid INT PRIMARY KEY,
     dfirstname VARCHAR(50),
