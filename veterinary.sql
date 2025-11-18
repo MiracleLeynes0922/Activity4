@@ -85,6 +85,16 @@ JOIN animals an ON a.animalid = an.animalid
 JOIN owners o ON an.ownerid = o.ownerid
 WHERE o.ofirstname = 'Maria';
 
+SELECT a.animalid,
+    a.name,
+    COUNT(ap.appointmentid) AS total_appointments
+FROM animals a
+JOIN appointments ap ON a.animalid = ap.animalid
+GROUP BY a.animalid, a.name
+ORDER BY total_appointments DESC
+LIMIT 1;
+
+
 CREATE TABLE doctors (
     doctorid INT PRIMARY KEY,
     dfirstname VARCHAR(50),
