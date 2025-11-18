@@ -49,6 +49,10 @@ VALUES
     (9, 'Max', 'Rabbit', 'Holland Lop', '2021-06-30', 'Male', 'White', 9),
     (10, 'Nala', 'Dog', 'Golden Retriever', '2020-12-12', 'Female', 'Golden', 10);
 
+SELECT STRING_AGG(DISTINCT species, ' and ') AS species_catered
+FROM animals
+WHERE species IN ('Dog', 'Cat');
+
 CREATE TABLE appointments (
     appointid INT PRIMARY KEY,
     animalid INT,
