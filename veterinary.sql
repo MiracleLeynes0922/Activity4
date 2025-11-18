@@ -79,6 +79,12 @@ WHERE animalid = (
     WHERE name = 'Simba'
 );
 
+SELECT COUNT(*) AS total_appointments
+FROM appointments a
+JOIN animals an ON a.animalid = an.animalid
+JOIN owners o ON an.ownerid = o.ownerid
+WHERE o.ofirstname = 'Maria';
+
 CREATE TABLE doctors (
     doctorid INT PRIMARY KEY,
     dfirstname VARCHAR(50),
