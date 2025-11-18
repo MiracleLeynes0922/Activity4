@@ -112,6 +112,9 @@ VALUES
 (9, 9, 60.00, '14:45:00'),
 (10, 10, 40.00, '11:30:00');
 
+ALTER TABLE invoices
+RENAME COLUMN paymentdate TO paymenttime;
+
 CREATE TABLE medical_records (
     recordid INT PRIMARY KEY,                      
     animalid INT,                         
