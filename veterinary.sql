@@ -129,6 +129,9 @@ VALUES
 ALTER TABLE invoices
 RENAME COLUMN paymentdate TO paymenttime;
 
+SELECT SUM(amount) AS total_sales
+FROM payments;
+
 CREATE TABLE medical_records (
     recordid INT PRIMARY KEY,                      
     animalid INT,                         
