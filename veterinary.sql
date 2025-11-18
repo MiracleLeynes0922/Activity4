@@ -33,6 +33,19 @@ CREATE TABLE animals (
     FOREIGN KEY (ownerid) REFERENCES owners(ownerid)
 );
 
+INSERT INTO animals (animalid, name, species, breed, dateofbirth, gender, color, ownerid)
+VALUES
+    (1, 'Leo', 'Dog', 'Labrador', '2019-03-15', 'Male', 'Yellow', 1),
+    (2, 'Mark', 'Cat', 'Persian', '2020-07-10', 'Male', 'White', 2),
+    (3, 'Gee-Anne', 'Dog', 'Beagle', '2018-11-25', 'Female', 'Tricolor', 3),
+    (4, 'Simba', 'Cat', 'Siamese', '2021-01-05', 'Male', 'Cream', 4),
+    (5, 'Shenna', 'Dog', 'Poodle', '2017-04-18', 'Female', 'Black', 5),
+    (6, 'Coco', 'Bird', 'Parrot', '2022-02-14', 'Female', 'Green', 6),
+    (7, 'Rio', 'Dog', 'Bulldog', '2016-08-20', 'Male', 'Brown', 7),
+    (8, 'Bella', 'Cat', 'British Shorthair', '2019-09-09', 'Female', 'Gray', 8),
+    (9, 'Max', 'Rabbit', 'Holland Lop', '2021-06-30', 'Male', 'White', 9),
+    (10, 'Nala', 'Dog', 'Golden Retriever', '2020-12-12', 'Female', 'Golden', 10);
+
 CREATE TABLE appointments (
     appointid INT PRIMARY KEY,
     animalid INT,
