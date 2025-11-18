@@ -21,6 +21,9 @@ CREATE TABLE owners(
     (9, 'Patrick', 'Mendoza', '90 Dapitan St, Manila', '09384561237', 'patrick.mendoza@example.com'),
     (10, 'Eleanor', 'Castro', '22 Quirino Hwy, Caloocan', '09573412895', 'eleanor.castro@example.com');
     
+ALTER TABLE owners
+ADD COLUMN registereddate DATE;
+
 CREATE TABLE animals (
     animalid INT PRIMARY KEY,
     name VARCHAR(50),
