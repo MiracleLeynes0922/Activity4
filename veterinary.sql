@@ -97,6 +97,10 @@ VALUES
     (9, 'Dr.Julia', 'Martinez', 'Internal Medicine Specialist', '555-444-2222', 'julia@example.com'),
     (10, 'Dr.Paolo', 'Cruz', 'Equine Specialist', '777-666-5555', 'paolo@example.com');
 
+UPDATE doctors
+SET dlastname = 'Reyes-Gonzales'
+WHERE dfirstname = 'Dr.Sofia';
+
 CREATE TABLE invoices (
     invoiceid INT PRIMARY KEY,
     appointid INT,
