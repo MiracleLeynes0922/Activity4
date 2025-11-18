@@ -69,6 +69,12 @@ INSERT INTO appointments (appointid, animalid, appointdate, reason) VALUES
 (9, 9, '2025-01-25', 'Surgery follow-up'),
 (10, 10, '2025-01-28', 'Behavioral consultation');
 
+DELETE FROM appointments
+WHERE animalid = (
+    SELECT animalid FROM animals
+    WHERE name = 'Simba'
+);
+
 CREATE TABLE doctors (
     doctorid INT PRIMARY KEY,
     dfirstname VARCHAR(50),
